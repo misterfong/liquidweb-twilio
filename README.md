@@ -1,21 +1,24 @@
-# node-js-getting-started
+# liquidweb-twilio
 
-A barebones Node.js app using [Express 4](http://expressjs.com/).
+A barebones Node.js app that uses the [LiquidWeb API](https://www.liquidweb.com/storm/api/) and Twilio to get your LiquidWeb server stats sent to via text message to your mobile phone.
 
-This application support the [Getting Started with Node on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs) article - check it out.
+Based on Edward Jiang's tutorial on creating a [reddit browser with Node JS and Twilio](https://studentrnd.org/build/tutorial-creating-a-reddit-browser-with-node-js-and-twilio)
+
+## Getting Started
+
+- Create a free [Twilio](https://www.twilio.com/) trial account
+- Create a free [Heroku](https://www.heroku.com) account
 
 ## Running Locally
 
 Make sure you have [Node.js](http://nodejs.org/) and the [Heroku Toolbelt](https://toolbelt.heroku.com/) installed.
 
 ```sh
-$ git clone git@github.com:heroku/node-js-getting-started.git # or clone your own fork
-$ cd node-js-getting-started
+$ heroku login
+$ git clone https://github.com/misterfong/liquidweb-twilio.git
+$ cd liquidweb-twilio
 $ npm install
-$ npm start
 ```
-
-Your app should now be running on [localhost:5000](http://localhost:5000/).
 
 ## Deploying to Heroku
 
@@ -25,12 +28,16 @@ $ git push heroku master
 $ heroku open
 ```
 
+## Usage
+
+Currently the app supports texting the message 'bandwidth' to your Twilio phone number to get your LiquidWeb monthly bandwidth stats.
+
 ## Documentation
 
-For more information about using Node.js on Heroku, see these Dev Center articles:
+For more information, please take a look at these resources
 
+- [LiquidWeb VPS review](http://vpswebhosting.org/liquidweb-vps-review/) - A review of LiquidWeb by Josh Kotsay which gives an in-depth look at what LiquidWeb web hosting offers.
+- [node-stormondemand](https://github.com/liquidweb/node-stormondemand) - Node.js client bindings for the LiquidWeb StormOnDemand API.
+- [Twilio API documentation](https://www.twilio.com/docs/api) - Twilio API docs
 - [Getting Started with Node.js on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
-- [Heroku Node.js Support](https://devcenter.heroku.com/articles/nodejs-support)
-- [Node.js on Heroku](https://devcenter.heroku.com/categories/nodejs)
-- [Best Practices for Node.js Development](https://devcenter.heroku.com/articles/node-best-practices)
-- [Using WebSockets on Heroku with Node.js](https://devcenter.heroku.com/articles/node-websockets)
+
