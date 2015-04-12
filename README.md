@@ -30,10 +30,10 @@ $ git push heroku master
 
 ## How Do I Find My Server Id?
 
-1) Login to your LiquidWeb control panel.
-2) Click the + next to your server name
-3) Click on the 'Dashboard' button
-4) On the top right of the 'Information' box, note down the field 'Unique ID'
+1. Login to your LiquidWeb control panel.
+2. Click the + next to your server name
+3. Click on the 'Dashboard' button
+4. On the top right of the 'Information' box, note down the field 'Unique ID'
 
 ## Usage
 
