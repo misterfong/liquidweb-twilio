@@ -24,7 +24,7 @@ $ npm install
 
 ```
 $ heroku create
-heroku config:set USER=[LiquidWeb Acct Username] PASSWORD=[LiquidWeb Acct Password] SERVER_ID=[LiquidWeb Acct Server Id]
+heroku config:set USER=[LiquidWeb Acct Username] PASSWORD=[LiquidWeb Acct Password] SERVER_ID=[Server Id]
 $ git push heroku master
 ```
 
